@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		A1A07E8E28057ED3008E8360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07E8D28057ED3008E8360 /* AppDelegate.swift */; };
 		A1A07E9028057ED3008E8360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07E8F28057ED3008E8360 /* SceneDelegate.swift */; };
-		A1A07E9228057ED3008E8360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07E9128057ED3008E8360 /* ViewController.swift */; };
+		A1A07E9228057ED3008E8360 /* DescriptionNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07E9128057ED3008E8360 /* DescriptionNewViewController.swift */; };
 		A1A07E9528057ED3008E8360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A07E9328057ED3008E8360 /* Main.storyboard */; };
 		A1A07E9728057ED6008E8360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A07E9628057ED6008E8360 /* Assets.xcassets */; };
 		A1A07E9A28057ED6008E8360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A07E9828057ED6008E8360 /* LaunchScreen.storyboard */; };
+		A1A07EA9280580CD008E8360 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A1A07EA8280580CD008E8360 /* Alamofire */; };
+		A1A07EAB28058116008E8360 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07EAA28058116008E8360 /* New.swift */; };
+		A1A07EAD2805855E008E8360 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07EAC2805855E008E8360 /* NetworkManager.swift */; };
+		A1A07EAF2805B214008E8360 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07EAE2805B214008E8360 /* NewsTableViewController.swift */; };
+		A1A07EB22805B5B3008E8360 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A07EB12805B5B3008E8360 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1A07E8A28057ED3008E8360 /* HomeWork 2.11 (NewsApi).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork 2.11 (NewsApi).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A07E8D28057ED3008E8360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1A07E8F28057ED3008E8360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1A07E9128057ED3008E8360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1A07E9128057ED3008E8360 /* DescriptionNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionNewViewController.swift; sourceTree = "<group>"; };
 		A1A07E9428057ED3008E8360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1A07E9628057ED6008E8360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1A07E9928057ED6008E8360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A07E9B28057ED6008E8360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A07EAA28058116008E8360 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		A1A07EAC2805855E008E8360 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A1A07EAE2805B214008E8360 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		A1A07EB12805B5B3008E8360 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A07EA9280580CD008E8360 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,75 @@
 		A1A07E8C28057ED3008E8360 /* HomeWork 2.11 (NewsApi) */ = {
 			isa = PBXGroup;
 			children = (
-				A1A07E8D28057ED3008E8360 /* AppDelegate.swift */,
-				A1A07E8F28057ED3008E8360 /* SceneDelegate.swift */,
-				A1A07E9128057ED3008E8360 /* ViewController.swift */,
-				A1A07E9328057ED3008E8360 /* Main.storyboard */,
-				A1A07E9628057ED6008E8360 /* Assets.xcassets */,
-				A1A07E9828057ED6008E8360 /* LaunchScreen.storyboard */,
-				A1A07E9B28057ED6008E8360 /* Info.plist */,
+				A1A07EB02805B571008E8360 /* View */,
+				A1A07EA128057EED008E8360 /* Controllers */,
+				A1A07EA628057F4A008E8360 /* Models */,
+				A1A07EA528057F2B008E8360 /* NetworkManager */,
+				A1A07EA228057EFC008E8360 /* Storyboards */,
+				A1A07EA428057F13008E8360 /* App */,
+				A1A07EA328057F09008E8360 /* Resources */,
 			);
 			path = "HomeWork 2.11 (NewsApi)";
+			sourceTree = "<group>";
+		};
+		A1A07EA128057EED008E8360 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07E9128057ED3008E8360 /* DescriptionNewViewController.swift */,
+				A1A07EAE2805B214008E8360 /* NewsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A1A07EA228057EFC008E8360 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07E9328057ED3008E8360 /* Main.storyboard */,
+				A1A07E9828057ED6008E8360 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A1A07EA328057F09008E8360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07E9628057ED6008E8360 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1A07EA428057F13008E8360 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07E8D28057ED3008E8360 /* AppDelegate.swift */,
+				A1A07E8F28057ED3008E8360 /* SceneDelegate.swift */,
+				A1A07E9B28057ED6008E8360 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1A07EA528057F2B008E8360 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07EAC2805855E008E8360 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A1A07EA628057F4A008E8360 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07EAA28058116008E8360 /* New.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1A07EB02805B571008E8360 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1A07EB12805B5B3008E8360 /* NewsTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,9 @@
 			dependencies = (
 			);
 			name = "HomeWork 2.11 (NewsApi)";
+			packageProductDependencies = (
+				A1A07EA8280580CD008E8360 /* Alamofire */,
+			);
 			productName = "HomeWork 2.11 (NewsApi)";
 			productReference = A1A07E8A28057ED3008E8360 /* HomeWork 2.11 (NewsApi).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,9 @@
 				Base,
 			);
 			mainGroup = A1A07E8128057ED3008E8360;
+			packageReferences = (
+				A1A07EA7280580CD008E8360 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A1A07E8B28057ED3008E8360 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A07E9228057ED3008E8360 /* ViewController.swift in Sources */,
+				A1A07E9228057ED3008E8360 /* DescriptionNewViewController.swift in Sources */,
+				A1A07EB22805B5B3008E8360 /* NewsTableViewCell.swift in Sources */,
 				A1A07E8E28057ED3008E8360 /* AppDelegate.swift in Sources */,
+				A1A07EAF2805B214008E8360 /* NewsTableViewController.swift in Sources */,
+				A1A07EAD2805855E008E8360 /* NetworkManager.swift in Sources */,
+				A1A07EAB28058116008E8360 /* New.swift in Sources */,
 				A1A07E9028057ED3008E8360 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5R2XG222B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HomeWork 2.11 (NewsApi)/Info.plist";
+				INFOPLIST_FILE = "HomeWork 2.11 (NewsApi)/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -304,7 +384,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5R2XG222B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HomeWork 2.11 (NewsApi)/Info.plist";
+				INFOPLIST_FILE = "HomeWork 2.11 (NewsApi)/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1A07EA7280580CD008E8360 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1A07EA8280580CD008E8360 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1A07EA7280580CD008E8360 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1A07E8228057ED3008E8360 /* Project object */;
 }
