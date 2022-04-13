@@ -8,7 +8,7 @@
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var imageNew: UIImageView!
     @IBOutlet var shortDescriptionLabel: UILabel!

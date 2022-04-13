@@ -10,14 +10,11 @@ import Alamofire
 
 class NetworkManager {
     
-    static let shared = NetworkManager()
-    
     static let api = "https://newsapi.org/v2/top-headlines?country=cn&apiKey=98c0892451fa47a0b853bcfb44ade68c"
     
-//    static let api = "https://newsapi.org/v2/top-headlines?country=ru&apiKey=98c0892451fa47a0b853bcfb44ade68c" Русские новости
+    //    static let api = "https://newsapi.org/v2/top-headlines?country=ru&apiKey=98c0892451fa47a0b853bcfb44ade68c" Русские новости
     
     private init() {}
-    
     
     private func fetchNews(from urlString: String, with completion: @escaping ([Articles]) -> Void) {
         
@@ -65,6 +62,6 @@ class NetworkManager {
                 case .failure(let error):
                     print(error)
                 }
-        }
+            }
     }
 }

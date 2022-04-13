@@ -28,7 +28,13 @@ class NewsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewsTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "Cell",
+            for: indexPath
+        ) as? NewsTableViewCell ?? NewsTableViewCell.init(
+            style: .default,
+            reuseIdentifier: ""
+        )
         
         setBorder(for: cell)
         setText(for: cell, for: news, and: indexPath)
